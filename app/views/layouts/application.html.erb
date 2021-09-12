@@ -11,7 +11,19 @@
   </head>
 
   <body>
-    <%= render 'layouts/header' %>
+    <%= render 'layouts/header' if current_user %>
+    
+    <% if flash[:notice] %>
+      <div class="alert">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
+    <% if flash[:alert] %>
+      <div class="alert">
+        <%= flash[:alert] %>
+      </div>
+    <% end %>
+    
     <%= yield %>
   </body>
 </html>

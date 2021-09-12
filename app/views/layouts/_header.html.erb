@@ -1,0 +1,18 @@
+<header class="header">
+  <nav class="nav">
+    <ul class="header_menu">
+      <li class="nav_loginUser">ログインユーザー</li>
+      <li class="header_menu_title"><%= link_to "kanban", root_path %></li>
+      <li>
+        <ul class="header_menu_inner">
+          <li>
+            <%= link_to "#" do %>
+              <span>リストを作成</span>
+            <% end %>
+          </li>
+          <li><%= link_to "サインアウト", "#" %></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>

@@ -3,4 +3,6 @@ Rails.application.routes.draw do
     get '/users/sign_out' => 'devise/sessions#delete'
   end
   root 'top#index'
+  
+  resources :list, only: %i(new create edit update destroy)
 end

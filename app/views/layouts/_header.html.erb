@@ -1,7 +1,7 @@
 <header class="header">
   <nav class="nav">
     <ul class="header_menu">
-      <li class="nav_loginUser">ログインユーザー</li>
+      <li class="nav_loginUser"><%= current_user.name %>さん</li>
       <li class="header_menu_title"><%= link_to "kanban", root_path %></li>
       <li>
         <ul class="header_menu_inner">

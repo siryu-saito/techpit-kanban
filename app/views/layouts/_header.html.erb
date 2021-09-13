@@ -10,7 +10,7 @@
               <span>リストを作成</span>
             <% end %>
           </li>
-          <li><%= link_to "サインアウト", "#" %></li>
+          <li><%= link_to "サインアウト", destroy_user_session_path, method: :delete %></li>
         </ul>
       </li>
     </ul>
